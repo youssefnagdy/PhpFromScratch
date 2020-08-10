@@ -129,50 +129,48 @@ foreach(                   as $key=> $value)
 
  */
 
-$articles = ["First post" , "Another post" , "Read This!"];
-$articles_2 = [1=>"first Post " , 2=>"Another Post" , "read This !"];
-$articles_3  = [
- "first" => "First Post",
- "second" => "Second Post",
- "third"  => "Third Post!"
+$articles = ["First post", "Another post", "Read This!"];
+$articles_2 = [1 => "first Post ", 2 => "Another Post", "read This !"];
+$articles_3 = [
+    "first" => "First Post",
+    "second" => "Second Post",
+    "third" => "Third Post!"
 ];
 
 $first_element = $articles[0];
 $second_element = $articles[1];
-$third_element  = $articles[2];
+$third_element = $articles[2];
 
 
 $count = 3;
 $price = 9.99;
 
 $values = [
- "message" => "Hello World",
- "count"   => 150,
- "pi"      => 3.14,
- "status"  => false,
- "result" => null
+    "message" => "Hello World",
+    "count" => 150,
+    "pi" => 3.14,
+    "status" => false,
+    "result" => null
 ];
-$values_2 = [$count,$price];
+$values_2 = [$count, $price];
 //Dumb these values out
 var_dump($values);
 
 
-$articles_multi =[
- ['title' => 'firstPost' , 'content' => 'This is First Post'],
- ['title' => 'secondPost' , 'content' => 'This is second Post'],
- ['title' => 'ThirdPost' , 'content' => 'This is third Post'],
+$articles_multi = [
+    ['title' => 'firstPost', 'content' => 'This is First Post'],
+    ['title' => 'secondPost', 'content' => 'This is second Post'],
+    ['title' => 'ThirdPost', 'content' => 'This is third Post'],
 ];
 
 $first_article_title = $articles_multi[0]['title'];
 var_dump($first_article_title);
 
-foreach ($articles as $article)
-{
- //This is Code Block
-  echo $article . " , ";
+foreach ($articles as $article) {
+    //This is Code Block
+    echo $article . " , ";
 }
 
-foreach ($articles_3 as $key => $value)
-{
-  echo $key . ' - ' . $value . " , ";
+foreach ($articles_3 as $key => $value) {
+    echo $key . ' - ' . $value . " , ";
 }
